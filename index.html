@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Overzichtspagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="nslogo.png" alt="logo ns">
+                        <h1>NS verhalen</h1>
+                    </a></li>
+                <li><a href="#"><span>Profiel</span><img src="Middel%202boek.png" alt="profiel"></a></li>
+                <li><a href="#"><span>Opgeslagen</span><img src="Middel%203boek.png" alt="opgeslagen"></a></li>
+            </ul>
+        </nav>
+
+        <button id="vergroot" type="button"><img src="Middel%201boek.png" alt="yas"></button>
+        <form id="zoeken" action="verhaal.html" method="get">
+            <input type="search" required> <!-- bron css-tricks -->
+            <input type="submit" value="Zoek">
+        </form>
+
+        <form id="zoeken2" action="verhaal.html" method="get">
+            <input type="search" required> <!-- bron css-tricks -->
+            <input type="submit" value="Zoek">
+        </form>
+    </header>
+    <div class="banner">
+        <h2>99 verhalen om onderweg te lezen</h2>
+    </div>
+    <button id="filter">Filter</button>
+    <main>
+
+        <form action="filteren.html" method="get" id="fens">
+            <fieldset>
+                <legend>Filteren op:</legend>
+                <label>
+                    Onderwerp
+                    <select name="onderwerp" required>
+                        <option value="">Kies een onderwerp (99)</option>
+                        <option value="liefde">Liefde (16)</option>
+                        <option value="spanning">Spanning (13)</option>
+                        <option value="angst">Angst (12)</option>
+                        <option value="mysterie">Mysterie (11)</option>
+                        <option value="humor">Humor (10)</option>
+                        <option value="actie">Actie (10)</option>
+                        <option value="gesprek">Gesprek (9)</option>
+                        <option value="agressie">Agressie (6)</option>
+                        <option value="politiek">Politiek (5)</option>
+                        <option value="gedicht/lied">Gedicht/lied (2)</option>
+                        <option value="toneel">Toneel (2) </option>
+                        <option value="engels">Engels (1)</option>
+                        <option value="frans">Frans (1)</option>
+                        <option value="geloof">Geloof (1)</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Aantal woorden</legend>
+                <label>
+                    <input type="radio" name="woorden" value="6-200">6-200
+                </label>
+                <label><input type="radio" name="woorden" value="200-500">200-500</label>
+                <label><input type="radio" name="woorden" value=">500">>500</label>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Sorteren op:</legend>
+                <label><input type="radio" name="sort" value="populariteit">Populariteit</label>
+                <label><input type="radio" name="sort" value="aantalwoordenlh">Aantal woorden l>h</label>
+                <label><input type="radio" name="sort" value="aantalwoordenhl">Aantal woorden h>l</label>
+                <label><input type="radio" name="sort" value="aanbevolen">Aanbevolen</label>
+                <label><input type="radio" name="sort" value="alfabetisch">Alfabetisch</label>
+            </fieldset>
+            <button type="submit" form="fens" class="zoek">Zoek</button>
+            <a href="verhaal.html" class="verras">Verras me</a>
+        </form>
+
+        <form action="filteren.html" method="get" id="fens2">
+            <fieldset>
+                <legend>Filteren op:</legend>
+                <label>
+                    Onderwerp
+                    <select name="onderwerp" required>
+                        <option value="">Kies een onderwerp (99)</option>
+                        <option value="liefde">Liefde (16)</option>
+                        <option value="spanning">Spanning (13)</option>
+                        <option value="angst">Angst (12)</option>
+                        <option value="mysterie">Mysterie (11)</option>
+                        <option value="humor">Humor (10)</option>
+                        <option value="actie">Actie (10)</option>
+                        <option value="gesprek">Gesprek (9)</option>
+                        <option value="agressie">Agressie (6)</option>
+                        <option value="politiek">Politiek (5)</option>
+                        <option value="gedicht/lied">Gedicht/lied (2)</option>
+                        <option value="toneel">Toneel (2) </option>
+                        <option value="engels">Engels (1)</option>
+                        <option value="frans">Frans (1)</option>
+                        <option value="geloof">Geloof (1)</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Aantal woorden</legend>
+                <label>
+                    <input type="radio" name="woorden" value="6-200">6-200
+                </label>
+                <label><input type="radio" name="woorden" value="200-500">200-500</label>
+                <label><input type="radio" name="woorden" value=">500">>500</label>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Sorteren op:</legend>
+                <label><input type="radio" name="sort" value="populariteit">Populariteit</label>
+                <label><input type="radio" name="sort" value="aantalwoordenlh">Aantal woorden l>h</label>
+                <label><input type="radio" name="sort" value="aantalwoordenhl">Aantal woorden h>l</label>
+                <label><input type="radio" name="sort" value="aanbevolen">Aanbevolen</label>
+                <label><input type="radio" name="sort" value="alfabetisch">Alfabetisch</label>
+            </fieldset>
+
+            <button type="submit" form="fens2" class="zoek">Zoek</button>
+            <a href="verhaal.html" class="verras">Verras me</a>
+        </form>
+        <article>
+            <header>
+                <img src="western.PNG" alt="western">
+                <a href=""><img src="Middel%205boek.png" alt="like"></a>
+                <p>473 woorden</p>
+            </header>
+            <section>
+                <h2>Western</h2>
+                <p>Een stofwolk ontneemt het zicht op de wegrijdende postkoets, die mij net heeft afgezet voor het station van dit door god verlaten prairydorp. Een tumbleweed tuimelt over het zanderige plein. Het bord van de verlaten prairydorp...</p>
+                <span>
+                    <img src="Middel%202sterrrrrrr.png" alt="4 sterren">
+                    <a href="verhaal.html">Lees verder ></a>
+                </span>
+            </section>
+        </article>
+
+        <article>
+            <header>
+                <img src="vers.PNG" alt="verliefd">
+                <a href="#"><img src="Middel%205boek.png" alt="like"></a>
+                <p>427 woorden</p>
+            </header>
+            <section>
+                <h2>Verliefd</h2>
+                <p>Licht van mijn leven. Ik stapte vandaag bus 21 uit. Het was op het midden van de dag. En wat een heerlijke dag! Het was twaalf uur, onze fantastische zoon sliep net. De miezelregen aaide de haartjes op mijn hand en ik dacht aan jou ....
+                </p>
+                <span>
+                    <img src="Middel%202sterrrrrrr.png" alt="4 sterren">
+                    <a href="">Lees verder ></a>
+                </span>
+            </section>
+        </article>
+
+        <article>
+            <header>
+                <img src="ver.PNG" alt="paranoia">
+                <a href=""><img src="Middel%205boek.png" alt="like"></a>
+                <p>793 woorden</p>
+            </header>
+            <section>
+                <h2>Paranoia</h2>
+                <p>Ik sluip de bus uit. Kop in de kraag. Ik maak me klein en duw m’n zoon vooruit. Hij slaapt. Eindelijk. Zijn gejengel trok veel te veel aandacht. De mensen lopen over het stationsplein. Het voelt alsof er een grote, knipperende pijl boven m’n hoofd ...</p>
+                <span>
+                    <img src="Middel%202sterrrrrrr.png" alt="4 sterren">
+                    <a href="">Lees verder ></a>
+                </span>
+            </section>
+        </article>
+
+        <article>
+            <header>
+                <img src="vridjag%20de%2013de.PNG" alt="vrijdag de 13de">
+                <a href=""><img src="Middel%205boek.png" alt="like"></a>
+                <p>721 woorden</p>
+            </header>
+            <section>
+                <h2>Vrijdag de 13de</h2>
+                <p>Bij het uitstappen van de bus waait mijn jas open, precies op het moment dat de buschauffeur de deuren sluit. Terwijl ik de kinderwagen waarin mijn zoon ligt te krijsen vasthoudt, ren ik mee met de bus en schreeuw ik naar de buschauffeur...</p>
+                <span>
+                    <img src="Middel%202sterrrrrrr.png" alt="4 sterren">
+                    <a href="">Lees verder ></a>
+                </span>
+            </section>
+        </article>
+
+        <article>
+            <header>
+                <img src="hongerwinter.PNG" alt="hongerwinter">
+                <a href=""><img src="Middel%205boek.png" alt="like"></a>
+                <p>450 woorden</p>
+            </header>
+            <section>
+                <h2>Hongerwinter</h2>
+                <p>Mijn voeten en handen heb ik ingezwachteld tegen de kou. Kranten tegen m’n borst. Ik duw een handkar voort waarin mijn zoon vredig ligt te slapen. Centraal Station. De tramrails liggen er kaal bij. Het hout tussen de rails is al lang weggenomen. Ik wordt geacht ...</p>
+                <span>
+                    <img src="Middel%202sterrrrrrr.png" alt="4 sterren">
+                    <a href="">Lees verder ></a>
+                </span>
+            </section>
+        </article>
+
+        <article>
+            <header>
+                <img src="zombie.PNG" alt="zombie">
+                <a href=""><img src="Middel%205boek.png" alt="like"></a>
+                <p>745 woorden</p>
+            </header>
+            <section>
+                <h2>Zombie</h2>
+                <p>Duizenden hongerige ondoden lopen zielloos over het stationsplein. Op zoek naar voedsel, naar half vergane hondenlijken, naar vers mensenvlees. Het is gekkenwerk dat ik hier ben, maar de brandstof van de bus is op. Ik hoopte dwars door ...</p>
+                <span>
+                    <img src="Middel%202sterrrrrrr.png" alt="4 sterren">
+                    <a href="">Lees verder ></a>
+                </span>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <form action="#">
+            <fieldset>
+                <legend>Items tonen</legend>
+                <label>
+                    <select name="items">
+                        <option value="6">6</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                </label>
+            </fieldset>
+        </form>
+
+        <table>
+            <tr>
+                <td>1</td>
+                <td><a href="#">2</a></td>
+                <td><a href="#">3</a></td>
+                <td><a href="#">4</a></td>
+                <td><a href="#">5</a></td>
+                <td><a href="#">6</a></td>
+                <td><a href="#">7</a></td>
+                <td><a href="#">8</a></td>
+                <td><a href="#">9</a></td>
+                <td><a href="#">10</a></td>
+                <td><a href="#">></a></td>
+            </tr>
+        </table>
+    </footer>
+    <script src="micro.js"></script>
+
+</body>
+
+</html>
